@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quick Quiz</h1>
+        </header>
+
+        <!-- Quiz Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h2>Welcome to the Quiz!</h2>
+            <p>Test your knowledge with 6 questions covering various topics.</p>
+            <button id="start-btn" class="btn btn-primary">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Game Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span id="question-number">1</span> of <span id="total-questions">6</span>
+                </div>
+                <div class="score-info">
+                    Score: <span id="current-score">0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Question will appear here</h2>
+                
+                <!-- Answer options as radio buttons for accessibility -->
+                <div id="answer-options" class="options-container">
+                    <!-- Options will be generated dynamically -->
+                </div>
+                
+                <button id="submit-answer" class="btn btn-primary" disabled>Submit Answer</button>
+                
+                <!-- Feedback area -->
+                <div id="feedback" class="feedback hidden">
+                    <p id="feedback-text"></p>
+                    <button id="next-question" class="btn btn-secondary">Next Question</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <h2>Quiz Complete!</h2>
+            <div class="results-container">
+                <div class="score-display">
+                    <span id="final-score">0</span> / <span id="final-total">6</span>
+                </div>
+                <p id="score-message">Great job!</p>
+                <button id="restart-btn" class="btn btn-primary">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
