@@ -6,7 +6,7 @@ The **Quiz App** is a small, single-page web application designed to test your k
 This project is built using **HTML for structure**, **CSS for styling**, and **vanilla JavaScript for interactivity**. Since it runs entirely in the browser, no server or database is required. It’s perfect as a beginner project, a learning example, or a base to build your own quiz variations.
 
 ## 🚀 Demo / Live Preview  
-- **Live Demo:** [LIVE_URL]
+- Live Demo:https://dprathyusha-09.github.io/Quiz_App/
 
 ## ✨ Features  
 - 🎯 **Six-question quiz** with multiple-choice answers  
